@@ -1,0 +1,13 @@
+{
+  "name": "different-react-versions-isolated",
+  "description": "This example demos host and remote applications running in isolation with two different React versions and no shared libraries",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "pnpm --filter '*-app' --parallel start",
+    "legacy:start": "pnpm --parallel legacy:start",
+    "build": "pnpm --parallel build",
+    "serve": "pnpm --parallel serve",
+    "clean": "pnpm --parallel clean"
+  },
+  "packageManager": "pnpm@9.6.0+sha512.38dc6fba8dba35b39340b9700112c2fe1e12f10b17134715a4aa98ccf7bb035e76fd981cf0bb384dfa98f8d6af5481c2bef2f4266a24bfa20c34eb7147ce0b5e"
+}
