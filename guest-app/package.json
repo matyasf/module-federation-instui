@@ -10,8 +10,8 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@instructure/ui": "10.5.1-pr-snapshot-1731420479891",
-    "@instructure/ui-themes": "10.5.1-pr-snapshot-1731420479891",
+    "@instructure/ui": "10.6.1",
+    "@instructure/ui-themes": "10.6.1",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },

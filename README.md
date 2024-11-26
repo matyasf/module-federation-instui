@@ -20,7 +20,7 @@ The main issue with InstUI theming that it uses a `globalThis` object to store/c
 
 # Running the demo
 
-Run `pnpm run start`. This will build and serve both `app1` and `app2` on ports 3001 and 3002 respectively with RsPack.
+Run `pnpm i` in the host app and in the guest app. Run `pnpm run start`. This will build and serve both `app1` and `app2` on ports 3001 and 3002 respectively with RsPack.
 You can also try `pnpm run legacy:start`, this should do the same just with Webpack
 
 - [localhost:3001](http://localhost:3001/) (HOST)
