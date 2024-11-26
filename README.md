@@ -4,7 +4,7 @@ This is a demo app using InstUI v8 that uses module federation to load an app wi
 
 - Host app needs to be using InstUI v8/v9
 - Host app needs to import the `canvas`/`canvasHighContrast` theme before loading the guest app (see [`host-app/index.js`](https://github.com/matyasf/module-federation-instui/blob/main/host-app/src/index.js#L9))
-- Guest app must use [`canvasThemeLocal` or `canvasHighContrastThemeLocal`](https://github.com/matyasf/module-federation-instui/blob/main/guest-app/src/App.js#L5). These are currently avaiable in a SNAPSHOT version of InstUI, see [package.json](https://github.com/matyasf/module-federation-instui/blob/main/guest-app/package.json#L13)
+- Guest app must use [`canvasThemeLocal` or `canvasHighContrastThemeLocal`](https://github.com/matyasf/module-federation-instui/blob/main/guest-app/src/App.js#L5). These are currently avaiable InstUI >= 10.6.1, see [package.json](https://github.com/matyasf/module-federation-instui/blob/main/guest-app/package.json#L13)
 - Guest app's `InstUISettingsProvider`'s `theme` prop cannot be left unset because it will default to `canvas`
 - Guest app cannot use `canvas.use()`, `canvasHighContrast.use()`, these do not exist in the local themes.
 - Overrides specified in global themes are not applied to local themes.
