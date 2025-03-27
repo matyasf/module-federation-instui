@@ -1,6 +1,6 @@
 import LocalButton from './LocalButton';
 import React from 'react';
-import {Alert, InstUISettingsProvider} from "@instructure/ui";
+import {Button, Tooltip, Alert, InstUISettingsProvider, RadioInput, RadioInputGroup} from "@instructure/ui";
 // The important part 2: this local theme does not read from globalThis
 import {canvasHighContrastThemeLocal} from "@instructure/ui-themes";
 import {PopoverSample} from "./popover";
@@ -12,7 +12,17 @@ const App = () => (
         <div style={{ border: '1px red solid' }} data-e2e="SHARED__REACT_BLOCK">
         <h1>Guest Application - React Version {React.version}</h1>
         <h2>InstUI v10</h2>
-        <LocalButton />
+        <RadioInputGroup name="guestRG" defaultValue="foo" description="Select something">
+            <RadioInput key="1" value="foo" label="option 1" />
+            <RadioInput key="2" value="foo2" label="option 2" />
+            <RadioInput key="3" value="foo3" label="option 3" />
+        </RadioInputGroup>
+        <Tooltip renderTip="Hello. I'm a guest tool tip 1" as={Button}>
+            Hover or focus me
+        </Tooltip>
+        <Tooltip renderTip="Hello. I'm a guest tool tip 2" as={Button}>
+            Hover or focus me
+        </Tooltip>
         <Alert variant="warning">Alert in the guest app.</Alert>
           <PopoverSample />
         </div>
